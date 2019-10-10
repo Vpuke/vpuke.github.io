@@ -1,74 +1,92 @@
 body {
-    background: url(http://getwallpapers.com/wallpaper/full/2/2/0/482064.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 100%;
-    background-position: center;
-    color: white;
-    
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 500px;
+    width: 650px;
+    display:grid;
+    grid-template-columns: repeat(13, 50px);
+    grid-template-rows: repeat(10, 50px);
+    background-color: black;
 }
 
-nav {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
 
-    
+
+.one {
+    grid-area: 2/4;
+    background-color:#770087;
 }
 
-ul {
-    display:flex;
-    list-style: none;
-    padding: 0;
-    
+.two {
+    grid-area: 3/5;
+    background-color:#A100A7;
 }
 
-li {
-    margin: 0 30px; 
-    
+.three {
+    grid-area: 4/4 / span 1 / span 7;
+    background-color:#C400BA;
 }
 
-a:link {
-    color: white;
-    text-decoration: none;
-    color: white;
-}
-a:visited {
-    text-decoration: none;
-    color:white;
-}
-a:hover{
-    text-decoration:none;
-    color:white;
-}
-a:active{
-    text-decoration:none;
-    color:white;
+.four {
+    grid-area: 2/10;
+    background-color: #770087;
 }
 
-main{
-    display:flex;
-    height: 600px;
-    align-items: center;
-    
-    
-    
+.five {
+    grid-area: 3/9;
+    background-color: #A100A7;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 200px;
-    margin: 20px auto 0 auto;
-    background-color:rgba(255, 255, 255, 0.3);
-    font-size: 40px;
-    font-family: 'Dancing Script', cursive;
-    border-radius: 40px;
+.six {
+    grid-area: 5/3/span 1/span 2;
+    background-color: #Eb27C8;
 }
-    
+
+.seven {
+    grid-area: 5/6 / span 1 / span 3;
+    background-color: #Eb27C8;
+}
+
+.eight {
+    grid-area: 5/10 / span 1 /span 2;
+    background-color:#Eb27C8;
+}
+
+.nine {
+    grid-area: 6 / 2 / span 1 / span 11;
+    background-color:#F55DD4;
+}
+
+.ten {
+    grid-area: 7 / 2;
+    background-color:#FCA4E7;
+}
+
+.eleven {
+    grid-area: 7 / 4 / span 1 / span 7;
+    background-color:#FCA4E7;
+}
+
+.twelve {
+    grid-area: 7 / 12 ;
+    background-color:#FCA4E7;
+}
+
+.thirteen {
+    grid-area: 8/ 4;
+    background-color:#FDCAF1;
+}
+
+.fourteen {
+    grid-area: 8 / 10;
+    background-color:#FDCAF1;
+}
+
+.fifteen {
+        grid-area: 9 / 5 / span 1 / span 2;
+        background-color:#FFF2FC;
+    }
+
+.sixteen {
+    grid-area: 9 / 8 / span 1 / span 2;
+    background-color: #FFF2FC;
+}
